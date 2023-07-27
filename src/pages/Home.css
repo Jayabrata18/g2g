@@ -1,0 +1,69 @@
+.home-container {
+    background-image: linear-gradient(180deg, #2962cd 0%, #b3f0ff 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.home-left-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 411px; 
+  height: 427px;
+  margin-left: 85px;
+  background-image: linear-gradient(198deg, #FAE491 52%, #F51587 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.home-logo-1 {
+  width: 363px;
+  height: 61px;
+  margin-top: -322px;
+  margin-left: -639px;
+  z-index: 3;
+  position: relative;
+}
+.home-written-area {
+  width: 626px;
+  height: 600px;
+  position: relative;
+  margin-top: -8px;
+  margin-left: -50px;
+  display: flex;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-cornsilk-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  flex-direction: column;
+  
+}
+.para {
+color: #000;
+  text-align: justify;
+  font-family: Jockey One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.open-icon-door {
+  width: 57px;
+    height: 59px;
+    background-image: url(/public/openiconnobg-2@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-left: 554px;
+    margin-top: 10px;
+}
+.slideshow-image {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+}

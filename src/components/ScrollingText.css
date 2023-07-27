@@ -1,0 +1,76 @@
+.landing-page-main-div-1 {
+    min-width: 100%;
+}
+
+.scrolling-text-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    left: 10px;
+    min-width: 100%;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+        /* Start from the left edge */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Scroll to the left by half of the container's width */
+    }
+}
+
+.scrolling-text-joy {
+    background: linear-gradient(180deg, red, rgba(255, 220, 96, 0.88));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    /* Adjust styles for screens with a maximum width of 768px (tablets, small screens) */
+    .landing-page-main-div-1 {
+        /* Add responsive styles for landing-page-main-div-1 if needed */
+    }
+
+    .landing-page-child-header {
+        /* Add responsive styles for landing-page-child-header if needed */
+    }
+
+    .scrolling-text-container {
+        top: 20px;
+        /* Adjust the top position for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Adjust styles for screens with a maximum width of 480px (mobile devices) */
+    .landing-page-main-div-1 {
+        /* Add different styles or remove elements for mobile if needed */
+    }
+
+    .landing-page-child-header {
+        /* Add different styles or remove elements for mobile if needed */
+    }
+
+    .scrolling-text-container {
+        top: 10px;
+        /* Adjust the top position for even smaller screens */
+    }
+}
