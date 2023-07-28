@@ -6,13 +6,12 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
-// import Roadmap from "./pages/Roadmap";
-// import { useEffect } from "react";
 import AboutUs from "./pages/AboutUs";
 import LandingPage from "./pages/LandingPage";
 import { useEffect } from "react";
-// import MenuButtonClicked from "./pages/MenuButtonClicked";
-// import Footer from "./pages/Footer";
+import Footer from "./pages/Footer";
+import Roadmap from "./pages/Roadmap";
+import MintPage from "./pages/MintPage";
 
 function App() {
   const action = useNavigationType();
@@ -46,10 +45,18 @@ function App() {
       //   title = "";
       //   metaDescription = "";
       //   break;
-      // case "/footer":
-      //   title = "";
-      //   metaDescription = "";
-      //   break;
+      case "/footer":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/roadmap":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/mint-page":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -58,7 +65,7 @@ function App() {
 
     if (metaDescription) {
       const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
+        'head > meta[name="shoroomiez"]'
       );
       if (metaDescriptionTag) {
         metaDescriptionTag.content = metaDescription;
@@ -69,11 +76,11 @@ function App() {
   return (
     <Routes>
       <Route path="/home" element={<Home />} />
-      {/* <Route path="/roadmap" element={<Roadmap />} /> */}
+      <Route path="/roadmap" element={<Roadmap />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/" element={<LandingPage />} />
-      {/* <Route path="/menu-button-clicked" element={<MenuButtonClicked />} />
-      <Route path="/footer" element={<Footer />} /> */}
+      <Route path="/mint-page" element={<MintPage />} />
+      <Route path="/footer" element={<Footer />} />
     </Routes>
   );
 }

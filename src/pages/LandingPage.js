@@ -8,6 +8,16 @@ const LandingPage = () => {
   const navigateToButtonClikedPage = () => {
     navigate("/home");
   };
+  const navigateToButtonClikedPage1 = () => {
+    navigate("/about-us");
+  };
+  const navigateToButtonClikedPage2 = () => {
+    navigate("/mint-page");
+  };
+  const navigateToButtonClikedPage3 = () => {
+    navigate("/roadmap");
+  };
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -55,19 +65,35 @@ const LandingPage = () => {
               onClick={handleCloseModal}
               autoFocus
             />
-            <button className="pop-up-rectangle-button-menu-button-1" autoFocus>
+            <button
+              className="pop-up-rectangle-button-menu-button-1"
+              onClick={navigateToButtonClikedPage}
+              autoFocus
+            >
               <span className="home">HOME</span>
             </button>
-            <button className="pop-up-rectangle-button-menu-button-2" autoFocus>
+            <button
+              className="pop-up-rectangle-button-menu-button-2"
+              onClick={navigateToButtonClikedPage1}
+              autoFocus
+            >
               <span className="About-us">ABOUT US</span>
             </button>
             <button className="pop-up-rectangle-button-menu-button-3" autoFocus>
               <span className="shroomieverse">SHROOMIEVERSE</span>
             </button>
-            <button className="pop-up-rectangle-button-menu-button-4" autoFocus>
+            <button
+              className="pop-up-rectangle-button-menu-button-4"
+              onClick={navigateToButtonClikedPage2}
+              autoFocus
+            >
               <span className="mint">MINT</span>
             </button>
-            <button className="pop-up-rectangle-button-menu-button-5" autoFocus>
+            <button
+              className="pop-up-rectangle-button-menu-button-5"
+              onClick={navigateToButtonClikedPage3}
+              autoFocus
+            >
               <span className="roadmap">ROADMAP</span>
             </button>
             <button className="pop-up-rectangle-button-menu-button-6" autoFocus>
